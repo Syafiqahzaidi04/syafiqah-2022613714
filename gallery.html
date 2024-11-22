@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+</head>
+<body style="background-color:#02FDFA;">
+    
+    <title>Image Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px; 
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+  
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<center>
+    <p style="font-family: Times New Roman; color: #3EC639; font-weight: bold; font-size: 80px;">MY GALLERY &#128578;</p>
+    </center>
+    <center><audio controls autoplay>
+    <source src="I Love You So.mp3" type="audio/mpeg"
+   </audio></center>
+
+
+    <div class="gallery">
+
+        <img src="family.jpg" alt="Image 1" />
+        <img src="siblings.jpg" alt="Image 2" />
+        <img src="teacher.jpg" alt="Image 3" />
+        <img src="housemate.jpg" alt="Image 4" />
+        <img src="adik.jpg" alt="Image 5" />
+        <img src="angah.jpg" alt="Image 6" />
+        <img src="ppd.jpg" alt="Image 7" />
+        <img src="sis.jpg" alt="Image 8" />
+    </div>
+
+</body>
+</html>
